@@ -8,15 +8,15 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#content">İçeriğe atla</a>
+    <a class="skip-link" href="#content" data-i18n="skip">İçeriğe atla</a>
 
     <!-- Hero -->
     <header class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="hero-label">Merhaba, ben</p>
+          <p class="hero-label" data-i18n="hero.label">Merhaba, ben</p>
           <h1 class="hero-name">Furkan Kızıloğlu</h1>
-          <p class="hero-title">Yazılım Mühendisi</p>
+          <p class="hero-title" data-i18n="hero.title">Yazılım Mühendisi</p>
           <div class="hero-links">
             <a class="hero-link" href="mailto:hfkiziloglu@gmail.com">hfkiziloglu@gmail.com</a>
             <a class="hero-link" href="tel:+905517305840">+90 551 730 58 40</a>
@@ -31,17 +31,18 @@
 
     <!-- Nav -->
     <nav class="site-nav" aria-label="Ana menü">
-      <div class="container">
+      <div class="container nav-inner">
         <ul class="nav-list">
           <li><a href="#cv">CV</a></li>
-          <li><a href="#skills">Yetenekler</a></li>
-          <li><a href="#education">Eğitim</a></li>
-          <li><a href="#experience">Deneyim</a></li>
-          <li><a href="#projects">Projeler</a></li>
-          <li><a href="#certifications">Sertifikalar</a></li>
-          <li><a href="#community">Topluluk</a></li>
-          <li><a href="#contact">İletişim</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+          <li><a href="#education" data-i18n="nav.education">Eğitim</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Deneyim</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+          <li><a href="#certifications" data-i18n="nav.certs">Sertifikalar</a></li>
+          <li><a href="#community" data-i18n="nav.community">Topluluk</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
         </ul>
+        <button class="lang-btn" id="langToggle" aria-label="Dil değiştir">EN</button>
       </div>
     </nav>
 
@@ -54,20 +55,20 @@
           <div class="cv-grid">
 
             <div class="cv-card card">
-              <p class="cv-lang">Türkçe</p>
+              <p class="cv-lang" data-i18n="cv.lang.tr">Türkçe</p>
               <h3 class="cv-name">Furkan Kızıloğlu</h3>
-              <p class="cv-desc">Yazılım Mühendisi · Ankara Üniversitesi<br>Güncel versiyon · PDF</p>
+              <p class="cv-desc" data-i18n-html="cv.desc.tr">Yazılım Mühendisi · Ankara Üniversitesi<br>Güncel versiyon · PDF</p>
               <a class="cv-btn" href="kiziloglu_cv.pdf" download>
-                İndir <span class="cv-btn-arrow">↓</span>
+                <span data-i18n="cv.btn.tr">İndir</span> <span class="cv-btn-arrow">↓</span>
               </a>
             </div>
 
             <div class="cv-card card">
               <p class="cv-lang">ENGLISH</p>
               <h3 class="cv-name">Furkan Kızıloğlu</h3>
-              <p class="cv-desc">Software Engineer · Ankara University<br>Latest version · PDF</p>
+              <p class="cv-desc" data-i18n-html="cv.desc.en">Software Engineer · Ankara University<br>Latest version · PDF</p>
               <a class="cv-btn" href="kiziloglu_cv_eng.pdf" download>
-                Download <span class="cv-btn-arrow">↓</span>
+                <span data-i18n="cv.btn.en">Download</span> <span class="cv-btn-arrow">↓</span>
               </a>
             </div>
 
@@ -78,10 +79,10 @@
       <!-- 2. Yetenekler — gri -->
       <section id="skills" class="section section-alt">
         <div class="container">
-          <h2 class="section-title">Yetenekler</h2>
+          <h2 class="section-title" data-i18n="sec.skills">Yetenekler</h2>
           <div class="skills-grid">
             <div class="skill-group card">
-              <h3 class="skill-group-title">Programlama</h3>
+              <h3 class="skill-group-title" data-i18n="skills.group1">Programlama</h3>
               <div class="tags">
                 <span class="tag">Python</span>
                 <span class="tag">SQL</span>
@@ -91,7 +92,7 @@
               </div>
             </div>
             <div class="skill-group card">
-              <h3 class="skill-group-title">Kütüphaneler &amp; Araçlar</h3>
+              <h3 class="skill-group-title" data-i18n="skills.group2">Kütüphaneler &amp; Araçlar</h3>
               <div class="tags">
                 <span class="tag">Pandas</span>
                 <span class="tag">NumPy</span>
@@ -105,10 +106,10 @@
               </div>
             </div>
             <div class="skill-group card">
-              <h3 class="skill-group-title">Diller</h3>
+              <h3 class="skill-group-title" data-i18n="skills.group3">Diller</h3>
               <div class="tags">
-                <span class="tag">Türkçe (Ana Dil)</span>
-                <span class="tag">İngilizce (C1)</span>
+                <span class="tag" data-i18n="skills.tag.tr">Türkçe (Ana Dil)</span>
+                <span class="tag" data-i18n="skills.tag.en">İngilizce (C1)</span>
               </div>
             </div>
           </div>
@@ -118,36 +119,36 @@
       <!-- 3. Eğitim — beyaz -->
       <section id="education" class="section">
         <div class="container">
-          <h2 class="section-title">Eğitim</h2>
+          <h2 class="section-title" data-i18n="sec.education">Eğitim</h2>
           <div class="timeline">
 
             <div class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-date">Eyl 2023 – Tem 2027</span>
+                <span class="timeline-date" data-i18n="edu.date1">Eyl 2023 – Tem 2027</span>
               </div>
               <div class="timeline-body card">
-                <h3 class="timeline-org">Ankara Üniversitesi</h3>
-                <p class="timeline-role">Yazılım Mühendisliği</p>
-                <p class="timeline-detail">GANO: 3,51 / 4,0</p>
+                <h3 class="timeline-org" data-i18n="edu.org1">Ankara Üniversitesi</h3>
+                <p class="timeline-role" data-i18n="edu.role1">Yazılım Mühendisliği</p>
+                <p class="timeline-detail" data-i18n="edu.gpa">GANO: 3,51 / 4,0</p>
               </div>
             </div>
 
             <div class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-date">Eyl 2020 – Tem 2022</span>
+                <span class="timeline-date" data-i18n="edu.date2">Eyl 2020 – Tem 2022</span>
               </div>
               <div class="timeline-body card">
-                <h3 class="timeline-org">Sağlık Bilimleri Üniversitesi</h3>
-                <p class="timeline-role">Tıp – Gülhane Tıp Fakültesi</p>
+                <h3 class="timeline-org" data-i18n="edu.org2">Sağlık Bilimleri Üniversitesi</h3>
+                <p class="timeline-role" data-i18n="edu.role2">Tıp – Gülhane Tıp Fakültesi</p>
               </div>
             </div>
 
             <div class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-date">Ağu 2018 – Ağu 2019</span>
+                <span class="timeline-date" data-i18n="edu.date3">Ağu 2018 – Ağu 2019</span>
               </div>
               <div class="timeline-body card">
-                <h3 class="timeline-org">Malatya Fen Lisesi</h3>
+                <h3 class="timeline-org" data-i18n="edu.org3">Malatya Fen Lisesi</h3>
               </div>
             </div>
 
@@ -158,34 +159,34 @@
       <!-- 4. Deneyim — gri -->
       <section id="experience" class="section section-alt">
         <div class="container">
-          <h2 class="section-title">Deneyim</h2>
+          <h2 class="section-title" data-i18n="sec.experience">Deneyim</h2>
           <div class="timeline">
 
             <div class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-date">Nis 2025 – Eyl 2025</span>
+                <span class="timeline-date" data-i18n="exp.date1">Nis 2025 – Eyl 2025</span>
               </div>
               <div class="timeline-body card">
-                <h3 class="timeline-org">Hacı Bayram Veli Üniversitesi</h3>
-                <p class="timeline-role">Memur · 4B Destek Personeli</p>
-                <p class="timeline-location">Ankara, Gölbaşı</p>
+                <h3 class="timeline-org" data-i18n="exp.org1">Hacı Bayram Veli Üniversitesi</h3>
+                <p class="timeline-role" data-i18n="exp.role1">Memur · 4B Destek Personeli</p>
+                <p class="timeline-location" data-i18n="exp.loc1">Ankara, Gölbaşı</p>
                 <ul class="timeline-list">
-                  <li>KPSS Ortaöğretim'de 1,5 milyon katılımcı arasında 293. sırada atandım.</li>
+                  <li data-i18n="exp.desc1a">KPSS Ortaöğretim'de 1,5 milyon katılımcı arasında 293. sırada atandım.</li>
                 </ul>
               </div>
             </div>
 
             <div class="timeline-item">
               <div class="timeline-meta">
-                <span class="timeline-date">Nis 2024 – Nis 2025</span>
+                <span class="timeline-date" data-i18n="exp.date2">Nis 2024 – Nis 2025</span>
               </div>
               <div class="timeline-body card">
-                <h3 class="timeline-org">Ankara Üniversitesi – SKS Bilgi İşlem Birimi</h3>
-                <p class="timeline-role">Kısmi Zamanlı Öğrenci Asistan</p>
-                <p class="timeline-location">Ankara, Gölbaşı</p>
+                <h3 class="timeline-org" data-i18n="exp.org2">Ankara Üniversitesi – SKS Bilgi İşlem Birimi</h3>
+                <p class="timeline-role" data-i18n="exp.role2">Kısmi Zamanlı Öğrenci Asistan</p>
+                <p class="timeline-location" data-i18n="exp.loc2">Ankara, Gölbaşı</p>
                 <ul class="timeline-list">
-                  <li>3.000+ kullanıcıya ulaşan Trileçe yemek bilgi/puanlama sistemini geliştirdim.</li>
-                  <li>Projeyi SKS Daire Başkanı'na sundum; beğenilmesi üzerine kısmi zamanlı çalışma teklifi aldım ve uygulamanın bakım/geliştirme süreçlerini yürüttüm.</li>
+                  <li data-i18n="exp.desc2a">3.000+ kullanıcıya ulaşan Trileçe yemek bilgi/puanlama sistemini geliştirdim.</li>
+                  <li data-i18n="exp.desc2b">Projeyi SKS Daire Başkanı'na sundum; beğenilmesi üzerine kısmi zamanlı çalışma teklifi aldım ve uygulamanın bakım/geliştirme süreçlerini yürüttüm.</li>
                 </ul>
               </div>
             </div>
@@ -197,7 +198,7 @@
       <!-- 5. Projeler — beyaz -->
       <section id="projects" class="section">
         <div class="container">
-          <h2 class="section-title">Projeler</h2>
+          <h2 class="section-title" data-i18n="sec.projects">Projeler</h2>
           <div class="projects-grid">
 
             <div class="project-card card">
@@ -205,12 +206,12 @@
                 <h3 class="project-name">Trileçe</h3>
                 <span class="badge">TÜBİTAK 2209-A</span>
               </div>
-              <p class="project-date">Mar 2024 – Devam Ediyor</p>
+              <p class="project-date" data-i18n="proj.date1">Mar 2024 – Devam Ediyor</p>
               <ul class="timeline-list">
-                <li>Python + Aiogram ile modüler yemek bilgi ve puanlama sistemi geliştirdim.</li>
-                <li>Menü görsellerini otomatik birleştiren Pillow tabanlı görüntü işleme yapısı kurdum.</li>
-                <li>Hava durumu, ders programı ve geçmiş tüketim verileriyle beslenen YZ tabanlı talep tahmin modeli için veri altyapısı hazırladım.</li>
-                <li>TÜBİTAK 2209-A projesi yürütücüsü olarak talep tahmin modülünü geliştirmeyi sürdürüyorum.</li>
+                <li data-i18n="proj.desc1a">Python + Aiogram ile modüler yemek bilgi ve puanlama sistemi geliştirdim.</li>
+                <li data-i18n="proj.desc1b">Menü görsellerini otomatik birleştiren Pillow tabanlı görüntü işleme yapısı kurdum.</li>
+                <li data-i18n="proj.desc1c">Hava durumu, ders programı ve geçmiş tüketim verileriyle beslenen YZ tabanlı talep tahmin modeli için veri altyapısı hazırladım.</li>
+                <li data-i18n="proj.desc1d">TÜBİTAK 2209-A projesi yürütücüsü olarak talep tahmin modülünü geliştirmeyi sürdürüyorum.</li>
               </ul>
               <div class="tags project-tags">
                 <span class="tag tag-accent">Python</span>
@@ -225,11 +226,11 @@
                 <h3 class="project-name">Anka Kalkanı</h3>
                 <span class="badge">TEKNOFEST 2025</span>
               </div>
-              <p class="project-date">Mar 2025 – Ağu 2025 · Hava Savunma Sistemleri Yarışması</p>
+              <p class="project-date" data-i18n="proj.date2">Mar 2025 – Ağu 2025 · Hava Savunma Sistemleri Yarışması</p>
               <ul class="timeline-list">
-                <li>YOLO tabanlı gerçek zamanlı hedef tespiti, sınıflandırma ve takip algoritmaları üzerine çalıştım.</li>
-                <li>Safety zone kısıtlaması geliştirme, test süreçleri ve GUI tasarımında görev aldım.</li>
-                <li>15 kişilik takımla final öncesi aşamaya kadar ilerlendi.</li>
+                <li data-i18n="proj.desc2a">YOLO tabanlı gerçek zamanlı hedef tespiti, sınıflandırma ve takip algoritmaları üzerine çalıştım.</li>
+                <li data-i18n="proj.desc2b">Safety zone kısıtlaması geliştirme, test süreçleri ve GUI tasarımında görev aldım.</li>
+                <li data-i18n="proj.desc2c">15 kişilik takımla final öncesi aşamaya kadar ilerlendi.</li>
               </ul>
               <div class="tags project-tags">
                 <span class="tag tag-accent">YOLO</span>
@@ -246,31 +247,31 @@
       <!-- 6. Sertifikalar — gri -->
       <section id="certifications" class="section section-alt">
         <div class="container">
-          <h2 class="section-title">Sertifikalar</h2>
+          <h2 class="section-title" data-i18n="sec.certs">Sertifikalar</h2>
           <div class="cert-grid">
 
             <div class="cert-card card">
-              <h3 class="cert-name">Savunma Sanayii 401</h3>
-              <p class="cert-issuer">Savunma Sanayii Akademi</p>
-              <p class="cert-date">Şubat 2026 – Devam Ediyor</p>
+              <h3 class="cert-name" data-i18n="cert.name1">Savunma Sanayii 401</h3>
+              <p class="cert-issuer" data-i18n="cert.issuer1">Savunma Sanayii Akademi</p>
+              <p class="cert-date" data-i18n="cert.date1">Şubat 2026 – Devam Ediyor</p>
             </div>
 
             <div class="cert-card card">
-              <h3 class="cert-name">Milli Yetkinlik Hamlesi Kampı</h3>
-              <p class="cert-issuer">Savunma Sanayii Başkanlığı · İstanbul</p>
-              <p class="cert-date">Şubat 2025</p>
+              <h3 class="cert-name" data-i18n="cert.name2">Milli Yetkinlik Hamlesi Kampı</h3>
+              <p class="cert-issuer" data-i18n="cert.issuer2">Savunma Sanayii Başkanlığı · İstanbul</p>
+              <p class="cert-date" data-i18n="cert.date2">Şubat 2025</p>
               <ul class="timeline-list">
-                <li>Türkiye geneli seçilen 100 öğrenciden biri.</li>
-                <li>T3 Vakfı Ideathon'da 2.'lik elde ettik.</li>
+                <li data-i18n="cert.desc2a">Türkiye geneli seçilen 100 öğrenciden biri.</li>
+                <li data-i18n="cert.desc2b">T3 Vakfı Ideathon'da 2.'lik elde ettik.</li>
               </ul>
             </div>
 
             <div class="cert-card card">
-              <h3 class="cert-name">GDSC Çekirdek Ekip Sertifikası</h3>
+              <h3 class="cert-name" data-i18n="cert.name3">GDSC Çekirdek Ekip Sertifikası</h3>
               <p class="cert-issuer">Google Developer Groups on Campus – Ankara University</p>
-              <p class="cert-date">Temmuz 2024</p>
+              <p class="cert-date" data-i18n="cert.date3">Temmuz 2024</p>
               <ul class="timeline-list">
-                <li>2023-2024 döneminde çekirdek ekip üyesi olarak aktif rol aldım.</li>
+                <li data-i18n="cert.desc3">2023-2024 döneminde çekirdek ekip üyesi olarak aktif rol aldım.</li>
               </ul>
             </div>
 
@@ -282,11 +283,11 @@
       <!-- 7. Topluluk — beyaz -->
       <section id="community" class="section">
         <div class="container">
-          <h2 class="section-title">Topluluk Rolleri</h2>
+          <h2 class="section-title" data-i18n="sec.community">Topluluk Rolleri</h2>
           <ul class="community-list">
-            <li>Ankara Üniversitesi Zeka Sporları Topluluğu (ANZEK) – Başkan Yardımcısı</li>
-            <li>Google Developer Student Clubs – Çekirdek Ekip Üyesi</li>
-            <li>Türkiye Münazara Şampiyonası – Çeyrek Finalist</li>
+            <li data-i18n="community.role1">Ankara Üniversitesi Zeka Sporları Topluluğu (ANZEK) – Başkan Yardımcısı</li>
+            <li data-i18n="community.role2">Google Developer Student Clubs – Çekirdek Ekip Üyesi</li>
+            <li data-i18n="community.role3">Türkiye Münazara Şampiyonası – Çeyrek Finalist</li>
           </ul>
         </div>
       </section>
@@ -294,14 +295,14 @@
       <!-- 8. İletişim — gri -->
       <section id="contact" class="section section-alt">
         <div class="container">
-          <h2 class="section-title">İletişim</h2>
+          <h2 class="section-title" data-i18n="sec.contact">İletişim</h2>
           <div class="contact-grid">
             <a href="mailto:hfkiziloglu@gmail.com" class="contact-card card">
-              <span class="contact-label">E-posta</span>
+              <span class="contact-label" data-i18n="contact.email">E-posta</span>
               <span class="contact-value">hfkiziloglu@gmail.com</span>
             </a>
             <a href="tel:+905517305840" class="contact-card card">
-              <span class="contact-label">Telefon</span>
+              <span class="contact-label" data-i18n="contact.phone">Telefon</span>
               <span class="contact-value">+90 551 730 58 40</span>
             </a>
             <a href="https://github.com/hfkiziloglu" target="_blank" rel="noopener" class="contact-card card">
@@ -323,6 +324,180 @@
         <small>© 2026 Furkan Kızıloğlu</small>
       </div>
     </footer>
+
+    <script>
+      const translations = {
+        tr: {
+          "skip": "İçeriğe atla",
+          "hero.label": "Merhaba, ben",
+          "hero.title": "Yazılım Mühendisi",
+          "nav.skills": "Yetenekler",
+          "nav.education": "Eğitim",
+          "nav.experience": "Deneyim",
+          "nav.projects": "Projeler",
+          "nav.certs": "Sertifikalar",
+          "nav.community": "Topluluk",
+          "nav.contact": "İletişim",
+          "sec.skills": "Yetenekler",
+          "sec.education": "Eğitim",
+          "sec.experience": "Deneyim",
+          "sec.projects": "Projeler",
+          "sec.certs": "Sertifikalar",
+          "sec.community": "Topluluk Rolleri",
+          "sec.contact": "İletişim",
+          "cv.lang.tr": "Türkçe",
+          "cv.desc.tr": "Yazılım Mühendisi · Ankara Üniversitesi<br>Güncel versiyon · PDF",
+          "cv.btn.tr": "İndir",
+          "cv.desc.en": "Software Engineer · Ankara University<br>Latest version · PDF",
+          "cv.btn.en": "Download",
+          "skills.group1": "Programlama",
+          "skills.group2": "Kütüphaneler & Araçlar",
+          "skills.group3": "Diller",
+          "skills.tag.tr": "Türkçe (Ana Dil)",
+          "skills.tag.en": "İngilizce (C1)",
+          "edu.date1": "Eyl 2023 – Tem 2027",
+          "edu.org1": "Ankara Üniversitesi",
+          "edu.role1": "Yazılım Mühendisliği",
+          "edu.gpa": "GANO: 3,51 / 4,0",
+          "edu.date2": "Eyl 2020 – Tem 2022",
+          "edu.org2": "Sağlık Bilimleri Üniversitesi",
+          "edu.role2": "Tıp – Gülhane Tıp Fakültesi",
+          "edu.date3": "Ağu 2018 – Ağu 2019",
+          "edu.org3": "Malatya Fen Lisesi",
+          "exp.date1": "Nis 2025 – Eyl 2025",
+          "exp.org1": "Hacı Bayram Veli Üniversitesi",
+          "exp.role1": "Memur · 4B Destek Personeli",
+          "exp.loc1": "Ankara, Gölbaşı",
+          "exp.desc1a": "KPSS Ortaöğretim'de 1,5 milyon katılımcı arasında 293. sırada atandım.",
+          "exp.date2": "Nis 2024 – Nis 2025",
+          "exp.org2": "Ankara Üniversitesi – SKS Bilgi İşlem Birimi",
+          "exp.role2": "Kısmi Zamanlı Öğrenci Asistan",
+          "exp.loc2": "Ankara, Gölbaşı",
+          "exp.desc2a": "3.000+ kullanıcıya ulaşan Trileçe yemek bilgi/puanlama sistemini geliştirdim.",
+          "exp.desc2b": "Projeyi SKS Daire Başkanı'na sundum; beğenilmesi üzerine kısmi zamanlı çalışma teklifi aldım ve uygulamanın bakım/geliştirme süreçlerini yürüttüm.",
+          "proj.date1": "Mar 2024 – Devam Ediyor",
+          "proj.desc1a": "Python + Aiogram ile modüler yemek bilgi ve puanlama sistemi geliştirdim.",
+          "proj.desc1b": "Menü görsellerini otomatik birleştiren Pillow tabanlı görüntü işleme yapısı kurdum.",
+          "proj.desc1c": "Hava durumu, ders programı ve geçmiş tüketim verileriyle beslenen YZ tabanlı talep tahmin modeli için veri altyapısı hazırladım.",
+          "proj.desc1d": "TÜBİTAK 2209-A projesi yürütücüsü olarak talep tahmin modülünü geliştirmeyi sürdürüyorum.",
+          "proj.date2": "Mar 2025 – Ağu 2025 · Hava Savunma Sistemleri Yarışması",
+          "proj.desc2a": "YOLO tabanlı gerçek zamanlı hedef tespiti, sınıflandırma ve takip algoritmaları üzerine çalıştım.",
+          "proj.desc2b": "Safety zone kısıtlaması geliştirme, test süreçleri ve GUI tasarımında görev aldım.",
+          "proj.desc2c": "15 kişilik takımla final öncesi aşamaya kadar ilerlendi.",
+          "cert.name1": "Savunma Sanayii 401",
+          "cert.issuer1": "Savunma Sanayii Akademi",
+          "cert.date1": "Şubat 2026 – Devam Ediyor",
+          "cert.name2": "Milli Yetkinlik Hamlesi Kampı",
+          "cert.issuer2": "Savunma Sanayii Başkanlığı · İstanbul",
+          "cert.date2": "Şubat 2025",
+          "cert.desc2a": "Türkiye geneli seçilen 100 öğrenciden biri.",
+          "cert.desc2b": "T3 Vakfı Ideathon'da 2.'lik elde ettik.",
+          "cert.name3": "GDSC Çekirdek Ekip Sertifikası",
+          "cert.date3": "Temmuz 2024",
+          "cert.desc3": "2023-2024 döneminde çekirdek ekip üyesi olarak aktif rol aldım.",
+          "community.role1": "Ankara Üniversitesi Zeka Sporları Topluluğu (ANZEK) – Başkan Yardımcısı",
+          "community.role2": "Google Developer Student Clubs – Çekirdek Ekip Üyesi",
+          "community.role3": "Türkiye Münazara Şampiyonası – Çeyrek Finalist",
+          "contact.email": "E-posta",
+          "contact.phone": "Telefon"
+        },
+        en: {
+          "skip": "Skip to content",
+          "hero.label": "Hello, I'm",
+          "hero.title": "Software Engineer",
+          "nav.skills": "Skills",
+          "nav.education": "Education",
+          "nav.experience": "Experience",
+          "nav.projects": "Projects",
+          "nav.certs": "Certifications",
+          "nav.community": "Community",
+          "nav.contact": "Contact",
+          "sec.skills": "Skills",
+          "sec.education": "Education",
+          "sec.experience": "Experience",
+          "sec.projects": "Projects",
+          "sec.certs": "Certifications",
+          "sec.community": "Community Roles",
+          "sec.contact": "Contact",
+          "cv.lang.tr": "Turkish",
+          "cv.desc.tr": "Software Engineer · Ankara University<br>Latest version · PDF",
+          "cv.btn.tr": "Download",
+          "cv.desc.en": "Software Engineer · Ankara University<br>Latest version · PDF",
+          "cv.btn.en": "Download",
+          "skills.group1": "Programming",
+          "skills.group2": "Libraries & Tools",
+          "skills.group3": "Languages",
+          "skills.tag.tr": "Turkish (Native)",
+          "skills.tag.en": "English (C1)",
+          "edu.date1": "Sep 2023 – Jul 2027",
+          "edu.org1": "Ankara University",
+          "edu.role1": "Software Engineering",
+          "edu.gpa": "GPA: 3.51 / 4.0",
+          "edu.date2": "Sep 2020 – Jul 2022",
+          "edu.org2": "University of Health Sciences",
+          "edu.role2": "Medicine – Gülhane Faculty of Medicine",
+          "edu.date3": "Aug 2018 – Aug 2019",
+          "edu.org3": "Malatya Science High School",
+          "exp.date1": "Apr 2025 – Sep 2025",
+          "exp.org1": "Hacı Bayram Veli University",
+          "exp.role1": "Civil Servant · 4B Support Staff",
+          "exp.loc1": "Ankara, Gölbaşı",
+          "exp.desc1a": "Ranked 293rd out of 1.5 million candidates in the KPSS Secondary Education exam.",
+          "exp.date2": "Apr 2024 – Apr 2025",
+          "exp.org2": "Ankara University – Student Affairs IT Unit",
+          "exp.role2": "Part-Time Student Assistant",
+          "exp.loc2": "Ankara, Gölbaşı",
+          "exp.desc2a": "Developed Trileçe, a food information and rating system reaching 3,000+ users.",
+          "exp.desc2b": "Presented the project to the Head of Student Affairs; received a part-time work offer upon approval and maintained/developed the application.",
+          "proj.date1": "Mar 2024 – Ongoing",
+          "proj.desc1a": "Built a modular food information and rating system using Python + Aiogram.",
+          "proj.desc1b": "Set up a Pillow-based image processing pipeline to automatically merge menu visuals.",
+          "proj.desc1c": "Prepared data infrastructure for an AI-based demand forecasting model fed by weather, course schedule, and historical consumption data.",
+          "proj.desc1d": "Continuing to develop the demand forecasting module as TÜBİTAK 2209-A project coordinator.",
+          "proj.date2": "Mar 2025 – Aug 2025 · Air Defense Systems Competition",
+          "proj.desc2a": "Worked on YOLO-based real-time target detection, classification, and tracking algorithms.",
+          "proj.desc2b": "Contributed to safety zone constraint development, testing processes, and GUI design.",
+          "proj.desc2c": "Advanced to the pre-final stage with a 15-person team.",
+          "cert.name1": "Defense Industry 401",
+          "cert.issuer1": "Defense Industry Academy",
+          "cert.date1": "February 2026 – Ongoing",
+          "cert.name2": "National Competency Camp",
+          "cert.issuer2": "Presidency of Defence Industries · Istanbul",
+          "cert.date2": "February 2025",
+          "cert.desc2a": "One of 100 students selected nationwide in Turkey.",
+          "cert.desc2b": "Achieved 2nd place at the T3 Foundation Ideathon.",
+          "cert.name3": "GDSC Core Team Certificate",
+          "cert.date3": "July 2024",
+          "cert.desc3": "Actively served as a core team member during the 2023-2024 term.",
+          "community.role1": "Ankara University Mind Sports Community (ANZEK) – Vice President",
+          "community.role2": "Google Developer Student Clubs – Core Team Member",
+          "community.role3": "Turkey Debate Championship – Quarterfinalist",
+          "contact.email": "Email",
+          "contact.phone": "Phone"
+        }
+      };
+
+      let currentLang = 'tr';
+
+      function applyLang(lang) {
+        const t = translations[lang];
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (t[key] !== undefined) el.textContent = t[key];
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+          const key = el.getAttribute('data-i18n-html');
+          if (t[key] !== undefined) el.innerHTML = t[key];
+        });
+        document.documentElement.lang = lang;
+        document.getElementById('langToggle').textContent = lang === 'tr' ? 'EN' : 'TR';
+      }
+
+      document.getElementById('langToggle').addEventListener('click', () => {
+        currentLang = currentLang === 'tr' ? 'en' : 'tr';
+        applyLang(currentLang);
+      });
+    </script>
 
   </body>
 </html>
