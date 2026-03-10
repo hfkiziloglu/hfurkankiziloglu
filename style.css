@@ -52,6 +52,11 @@ body {
   background: var(--bg-alt);
   border-radius: var(--radius);
   padding: 26px 30px;
+  transition: transform .2s, box-shadow .2s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0,102,204,.15), 0 8px 30px rgba(0,0,0,.08);
 }
 
 /* Alt zemin bölümlerinde kartlar beyaz olsun */
@@ -397,6 +402,11 @@ body {
   font-size: .95rem;
   font-weight: 500;
   border-left: 3px solid var(--accent);
+  transition: transform .2s, box-shadow .2s;
+}
+.community-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0,102,204,.15), 0 8px 30px rgba(0,0,0,.08);
 }
 
 
